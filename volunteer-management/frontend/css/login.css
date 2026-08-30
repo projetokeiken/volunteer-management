@@ -1,0 +1,103 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+	min-height: 100vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color:#1e62de;
+	text-align: center;
+}
+main {
+	width: 100%;
+	color: #fefeff;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+main > a {
+	color: #fdfaf2;
+}
+
+.login {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  
+	
+  width: 450px;
+	min-height: 325px;
+
+	background-color: #fdfaf2;
+	color: #2b6de9;
+	margin-top: 30px;
+	margin-bottom: 50px;
+ 
+	gap: 35px;
+
+}
+
+.esqueceu-link {
+	color: #2163dc;
+	font-size: 15px;
+}
+
+.criar-conta {
+	font-size: 20px;
+}
+
+
+.login input{
+	width: 100%;
+	max-width: 250px;
+	height: 45px;
+
+	background-color: #e7e7e7;
+	border: 1px solid #d1d1d1;
+	border-radius: 8px;
+
+	text-align: center;
+	font-size: 15px;
+}
+
+.login input::placeholder {
+	font-size: 17px;
+}
+
+.button-p {
+	width: 100%;
+	max-width: 200px;
+	height: 45px;
+
+	background-color: #2163dc;
+	color: #fbf9f2;
+	
+	border-radius: 8px;
+}
+
+.button-p:hover {
+  transform: translateY(-2px);
+
+	box-shadow: 0 15px 30px rgba(33, 99, 220, .5);
+	
+}
+
+@media (max-width: 500px) {
+
+	.login {
+		width: 95%;
+	}
+}
+
+
+
