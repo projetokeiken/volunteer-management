@@ -2,7 +2,7 @@ document.querySelector(".button-p").addEventListener("click" , function() {
     const emailInput = document.querySelector(".email");
     const errorSpan = document.getElementById("errorEmail");
     const emailValue = emailInput.value.trim();
-
+    
 
     const emailRegex =  /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -17,6 +17,12 @@ document.querySelector(".button-p").addEventListener("click" , function() {
     } else {
 
         errorSpan.style.display = "none";
-        alert("Login efetuado com sucesso! ")
+        console.log("indo para: inserir senha");
+
+
+        localStorage.setItem(`userEmail`, emailValue);
+
+        window.location.href = "senha.html";
+
     }
-})
+});
