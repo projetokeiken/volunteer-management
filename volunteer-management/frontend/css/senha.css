@@ -1,8 +1,14 @@
+@font-face {
+    font-family: 'Nunito';
+    src: url('Nunito-VariableFont_wght.ttf')format('truetype');
+    font-weight: 200 1000;
+    font-style: normal;
+}
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -12,7 +18,7 @@ body {
 	justify-content: center;
 	align-items: center;
 
-	background-color:#1e62de;
+	background-color:  #3B5BFB;
 	text-align: center;
 }
 main {
@@ -22,6 +28,9 @@ main {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+
+	font-family: 'Nunito';
+	font-weight: 400;
 }
 
 main > a {
@@ -32,7 +41,7 @@ main > a {
   display: flex;
   align-items: center;
   gap: 15px;
-  background-color: #fdfbf7;
+  background-color: #EAF1FF;
   border: 1px solid #cccccc;
   padding: 15px 20px;
   width: 100%;
@@ -43,23 +52,21 @@ main > a {
 .avatar {
   width: 50px;
   height: 50px;
-  border: 2px solid #2f73f6;
+  border: 2px solid #B8D0FF;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 22px;
-  font-weight: bold;
-  color: #2f73f6;
-  background-color: #fff;
+  color: #1E3FCC;
+  background-color: #EAF1FF;
   text-transform: uppercase;
 }
 
 
 .username {
     color: #333333;
-    font-family: sans-serif;
-    font-weight: bold;
+    
     text-decoration: underline;
 }
 
@@ -73,8 +80,8 @@ main > a {
   width: 450px;
 	min-height: 325px;
 
-	background-color: #fdfaf2;
-	color: #2b6de9;
+	background-color: #EAF1FF;
+	color: #1E3FCC;
 	margin-top: 10px;
 	margin-bottom: 50px;
 
@@ -83,47 +90,55 @@ main > a {
 }
 
 .login h2 {
+	font-size: 30px;
+	font-weight: 700;
 	text-align: center;
 }
 
+.login h3{
+	font-weight: 400;
+}
+
 .esqueceu-link {
-	color: #2163dc;
-	font-size: 15px;
+	color: #1E3FCC;
+	
 }
 
 
 .login input{
 	width: 100%;
-	max-width: 250px;
+	max-width: 235px;
 	height: 45px;
 
-	background-color: #e7e7e7;
-	border: 1px solid #d1d1d1;
+	
+	border: 1px solid #B8D0FF;
 	border-radius: 8px;
 
 	text-align: center;
-	font-size: 15px;
+	
 }
 
 .login input::placeholder {
-	font-size: 17px;
+	font-size: 18px;
+	opacity: 0.5;
 }
 
 .button-p {
 	width: 100%;
-	max-width: 200px;
+	max-width: 235px;
 	height: 45px;
 
-	background-color: #2163dc;
+	background-color: #3B5BFB;
 	color: #EAF1FF;
 	
+	font-weight: 400;
 	border-radius: 8px;
 }
 
 .button-p:hover {
   transform: translateY(-2px);
 
-	box-shadow: 0 15px 30px rgba(33, 99, 220, .5);
+	box-shadow: 0 2px 3px #3B5BFB;
 	
 }
 
