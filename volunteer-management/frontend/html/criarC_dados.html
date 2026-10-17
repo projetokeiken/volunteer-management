@@ -3,7 +3,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-       <link rel="stylesheet" href="/frontend/css/criarC_dados.css">
+       <link rel="stylesheet" href="/volunteer-management/frontend/css/criarC_dados.css">
 		<title>Criar conta</title>
 
 		
@@ -25,12 +25,18 @@
 
 		<div id="dados" class="dadosId-container">
 
-		    <input type="text" class="email" placeholder="NOME">
-            <input type="text" class="email" placeholder="SOBRENOME">
-            <input type="text" class="email" placeholder="NOME JAPONES">
-            <input type="text" class="email" placeholder="SOBRENOME JAPONES">
-            <input type="text" class="email" placeholder="TELEFONE">
-            <select id="CONGREGAÇÃO" class="CONGREGAÇÃO">
+		    <input type="text" class="NOME" placeholder="NOME">
+            <input type="text" class="SOBRENOME" placeholder="SOBRENOME">
+            <input type="text" class="NOME-JAPONES" placeholder="NOME JAPONES">
+            <input type="text" class="SOBRENOME-JAPONES" placeholder="SOBRENOME JAPONES">
+            <input type="text" class="TELEFONE" placeholder="TELEFONE">
+            <select class="privilegio" required>
+                <option value="" disabled selected>PRIVILÉGIO</option>
+                <option value="COMISSÃO">Comissão</option>
+                <option value="COORDENADOR">Coordenador</option>
+                <option value="VOLUNTÁRIO DEPARTAMENTO">Voluntario do DP Serviço</option>
+            </select>
+            <select class="congregacao" required>
                 <option value="" disabled selected>CONGREGAÇÃO</option>
                 <option value="Arai Handa">Arai Handa</option>
                 <option value="Minami Isesaki">Minami Isesaki</option>
@@ -70,17 +76,20 @@
            
 
 
-			<button class="button-p">Próximo</button>
+			<button class="button-D">Próximo</button>
 		  
 	  </div>
 
-	<a href="#" class="ja_tem_conta">Ja tem uma conta? Login</a>
+	   <p class="criar-conta">
+        Já tem uma conta?
+        <a href="#" class="link-login">Login</a>
+      </p>
  
 	
 
 	</main>
 
-	<script></script>
+	<script src="/volunteer-management/frontend/javascript/scriptCriar_dados.js"></script>
 </body>
 
 </html>
